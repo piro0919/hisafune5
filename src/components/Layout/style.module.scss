@@ -1,0 +1,38 @@
+.wrapper {
+  position: relative;
+}
+
+.slide {
+  transition: 500ms;
+}
+
+.inactiveSlide {
+  filter: blur(4px);
+  opacity: 0.25;
+}
+
+.slideInner {
+  overflow: auto hidden;
+}
+
+.leftButton,
+.rightButton {
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+  position: absolute;
+  top: 0;
+  width: 48px;
+}
+
+.leftButton {
+  left: 0;
+}
+
+.rightButton {
+  right: 0;
+}
+
+.buttonInner {
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+}
