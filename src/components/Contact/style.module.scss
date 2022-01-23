@@ -20,13 +20,18 @@
   gap: 48px;
 }
 
+.abbr {
+  padding: 4px 0 0;
+}
+
 .input,
 .textarea {
   background: #fff;
   border: 1px solid #333;
-  padding: 4px 8px;
+  cursor: text;
   padding: 4px 0;
-  word-wrap: anywhere;
+  user-select: text;
+  word-break: break-all;
 }
 
 .textarea {

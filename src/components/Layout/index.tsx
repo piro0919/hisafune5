@@ -26,6 +26,7 @@ function Layout({
   const router = useRouter();
   const settings = useMemo<Settings>(
     () => ({
+      accessibility: false,
       afterChange: (currentSlide): void => {
         const { path } = slides[currentSlide];
 
@@ -115,6 +116,23 @@ function Layout({
         : currentSlideNumber + 1
     );
   });
+
+  useEffect(() => {
+    if (!sliderRef.current) {
+      return;
+    }
+
+    const {
+      location: { pathname },
+    } = window;
+    const index = slides.findIndex(({ path }) => pathname === path);
+
+    if (index < 0) {
+      return;
+    }
+
+    sliderRef.current.slickGoTo(index, true);
+  }, [slides]);
 
   return (
     <div className={styles.wrapper}>

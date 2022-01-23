@@ -18,7 +18,7 @@ function Blog(): JSX.Element {
         <h2>日記</h2>
         <ul className={styles.list}>
           <li>
-            <Link href="#">
+            <Link href="/blog/hoge">
               <a className={styles.link}>
                 <span className={styles.title}>ほげほげ</span>
                 <span className={styles.line} />
@@ -29,7 +29,7 @@ function Blog(): JSX.Element {
             </Link>
           </li>
           <li>
-            <Link href="#">
+            <Link href="/blog/fuga">
               <a className={styles.link}>
                 <span className={styles.title}>ふがふが</span>
                 <span className={styles.line} />
@@ -40,7 +40,7 @@ function Blog(): JSX.Element {
             </Link>
           </li>
           <li>
-            <Link href="#">
+            <Link href="/blog/piyo">
               <a className={styles.link}>
                 <span className={styles.title}>ぴよぴよ</span>
                 <span className={styles.line} />

@@ -12,7 +12,9 @@ function Top(): JSX.Element {
             alt="書家 ひさ舟"
             layout="fill"
             objectFit="contain"
+            quality={100}
             src={logo}
+            unoptimized={true}
           />
         </div>
       </div>

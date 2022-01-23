@@ -72,7 +72,7 @@ function Contact({ onSubmit }: ContactProps): JSX.Element {
           <div className={styles.formInner}>
             <label>
               <span>
-                お名前<abbr>*</abbr>
+                お名前<abbr className={styles.abbr}>*</abbr>
               </span>
               <Controller
                 control={control}
@@ -108,7 +108,7 @@ function Contact({ onSubmit }: ContactProps): JSX.Element {
             </label>
             <label>
               <span>
-                メールアドレス<abbr>*</abbr>
+                メールアドレス<abbr className={styles.abbr}>*</abbr>
               </span>
               <Controller
                 control={control}
@@ -129,7 +129,7 @@ function Contact({ onSubmit }: ContactProps): JSX.Element {
             </label>
             <label>
               <span>
-                内容<abbr>*</abbr>
+                内容<abbr className={styles.abbr}>*</abbr>
               </span>
               <Controller
                 control={control}

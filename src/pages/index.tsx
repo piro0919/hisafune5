@@ -79,10 +79,11 @@ export const getServerSideProps: GetServerSideProps<PagesProps> = async ({
   req: { url },
 }) => {
   const paths = ["/", ...["/gallery", "/blog", "/about", "/contact"].reverse()];
+  const index = paths.findIndex((path) => url === path);
 
   return {
     props: {
-      defaultSlideNumber: paths.findIndex((path) => url === path),
+      defaultSlideNumber: index >= 0 ? index : 0,
     },
   };
 };
